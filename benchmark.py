@@ -31,4 +31,4 @@ def model_infer(x):
     return y_pred
 
 results = bicycle.run_eval(user_func=model_infer)
-print(f"Accuracy: {results['acc']}%")
+print(f"Accuracy: {results['acc'] * 100.0}%")
